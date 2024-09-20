@@ -36,10 +36,12 @@ const Navbar = () => {
   },
 ]
 
+  
+
   const [visible, setVisible] = useState(false);
   return (
     <>
-      <nav className="h-11 w-auto flex bg-slate-500 rounded-md m-5 justify-between bg-opacity-60">
+      <nav className="h-11 w-[auto] flex bg-slate-500 rounded-md m-5 justify-between bg-opacity-60">
         <div className="text-white p-1 ml-2 text-2xl font-extrabold">
           Portfolio
         </div>
@@ -52,24 +54,6 @@ const Navbar = () => {
                 <li className="text-white hover:underline h-11 p-2 w-18">{navdata.title}</li>
               </NavLink>
             ))}
-            {/* <Link to={"/Profile"}>
-              <li className="text-white hover:underline h-11 p-2 w-18">
-                Profile
-              </li>
-            </Link>
-
-
-            <Link to={"/Projects"}>
-              <li className="text-white hover:underline h-11 p-2 w-18">
-                Projects
-              </li>
-            </Link>
-
-            <Link to={"/Contact"}>
-              <li className="text-white hover:underline h-11 p-2 w-18">
-                Contact
-              </li>
-            </Link> */}
           </ul>
 
           <div className="h-11 w-14 bg-zinc-700 hover:bg-red-300 rounded-md">

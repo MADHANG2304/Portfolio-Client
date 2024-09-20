@@ -6,7 +6,7 @@ const Profile = () => {
       <div className='flex flex-row bg-black h-[100%] w-[100%] gap-2 '>
           <div className='h-full w-full  bg-white flex flex-col justify-center items-center'>Image</div>
           <div className='h-full w-full  bg-white flex justify-center items-center'>
-            <h1></h1>
+            <h1 className='text-5xl' >I'Am <span className='text-red-500'>Madhan</span></h1>
 
           </div>
       </div>
