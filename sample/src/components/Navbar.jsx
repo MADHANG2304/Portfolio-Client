@@ -23,13 +23,18 @@ const Navbar = () => {
     path : "/"
   },
   {
-    title : "Profile",
-    path : "/Profile"
+    title : "About",
+    path : "/About"
+  },
+  {
+    title: "Education",
+    path : "/Education"
   },
   {
     title : "Projects",
     path : "/Projects"
   },
+  
   {
     title : "Contact",
     path : "/Contact"
@@ -45,23 +50,23 @@ const Navbar = () => {
         <div className="text-white p-1 ml-2 text-2xl font-extrabold">
           Portfolio
         </div>
-        <div className="flex ">
-          <ul className="flex  gap-4 mr-3">
+        <div className="hidden md:block ">
+          <ul className="h-[100%]  flex  gap-4 mr-3 ">
 
             {navlinks.map((navdata, index) => (
               
               <NavLink key ={index} to={navdata.path}>
-                <li className="text-white hover:underline h-11 p-2 w-18">{navdata.title}</li>
+                <li className="text-white hover:underline h-11 p-2 w-18 ">{navdata.title}</li>
               </NavLink>
             ))}
+          {/* </div> */}
+          {/* <div className="h-11 w-14 bg-zinc-700 hover:bg-red-300 rounded-md"> */}
+            <UserPen 
+              onClick={() => setVisible(true)}
+              className="text-white  rounded-md  h-10 "
+            />
           </ul>
 
-          <div className="h-11 w-14 bg-zinc-700 hover:bg-red-300 rounded-md">
-            <UserPen
-              onClick={() => setVisible(true)}
-              className="mt-2 ml-4  text-white "
-            />
-          </div>
         </div>
       </nav>
 
@@ -116,8 +121,7 @@ const Navbar = () => {
                 <button
                   type="submit"
                   className="bg-red-200  h-[20%] w-[50%] rounded-md text-white font-bold focus:ring-4 focus:ring-black focus:border-transparent focus:outline-none hover:bg-red-500 "
-                >
-                  Register
+                >Register
                 </button>
               </form>
             </div>
