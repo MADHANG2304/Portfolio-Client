@@ -1,5 +1,4 @@
 import './assets/css/style.css'
-import Projects from './components/Projects';
 import Navbar from './components/Navbar';
 import Landpage from './components/Landpage';
 import Contact from './components/Contact';
@@ -7,6 +6,7 @@ import Login from './components/Login';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import About from './components/About';
 import Education from './components/Education';
+import Projects from './pages/Projects';
 
 function App() {
   return (

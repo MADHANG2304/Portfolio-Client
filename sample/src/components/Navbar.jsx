@@ -31,7 +31,7 @@ const Navbar = () => {
     path : "/Education"
   },
   {
-    title : "Projects",
+    title : "Project",
     path : "/Projects"
   },
   
@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="text-white p-1 ml-2 text-2xl font-extrabold">
           Portfolio
         </div>
-        <div className="hidden md:block ">
+        <div className="hidden sm:block ">
           <ul className="h-[100%]  flex  gap-4 mr-3 ">
 
             {navlinks.map((navdata, index) => (
